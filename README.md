@@ -33,7 +33,7 @@ Iniando a API:
 * Windows
     
     `./venv/Scripts/activate.bat`
-*UNIX
+* UNIX
     
     `source venv/bin/activate`
     
