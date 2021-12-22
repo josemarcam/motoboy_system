@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+#BEGIN MYSQL
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    working_dir: /var/data
+    command: mysqld
+    expose:
+      - "3306"
+    ports:
+      - "43306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=MBPASSWD
+      - MYSQL_DATABASE=mb-system-dev
+      - MYSQL_USER=MBUSER
+      - MYSQL_PASSWORD=MBPASSWD
+    volumes:
+      - ./mysql/volume/mysql:/var/lib/mysql
+      - ./mysql/volume/data:/var/data
+#END MYSQL
