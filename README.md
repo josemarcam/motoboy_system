@@ -38,6 +38,8 @@ Iniando a API:
     `source venv/bin/activate`
     
     
+Instalando dependências:
+
     //Instale as bibliotecas necessarias
     pip install -r requirements.txt
 
